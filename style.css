@@ -1,0 +1,234 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins" sans-serif;
+}
+
+body {
+  color: white;
+  background-image: url(https://images.pexels.com/photos/1261728/pexels-photo-1261728.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: center;
+  flex-grow: 1;
+}
+
+.main-header {
+  text-align: center;
+  background: transparent;
+  color: white; 
+}
+
+.logo {
+  font-size: 60px;
+  text-align: center;
+  padding: 40px;
+}
+
+nav {
+  width: 100%;
+  overflow: hidden; 
+  background-color: #1b1818;
+}
+
+nav a {
+  float: left; 
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px; 
+  text-decoration: none; 
+}
+
+nav a.right {
+  float: right;
+}
+
+nav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.main-container {
+  display: flex;
+  justify-content: center;
+}
+
+.left {
+  flex-basis: 35%;
+  height: 100vh;
+  background-image: url(https://images.pexels.com/photos/1261728/pexels-photo-1261728.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.left img {
+  width: 200px;
+  height: 200px;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.left p {
+  margin: 5px;
+  padding: 5px;
+  font-size: 20px;
+}
+
+.right {
+  display: flex;
+  justify-content: center;
+  flex-basis: 65%;
+  width: 100%;
+  background-image: url(https://images.pexels.com/photos/1261728/pexels-photo-1261728.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.content {
+  padding: 20px;
+}
+
+.content h2 {
+  font-size: 40px;
+}
+
+.speaker-form {
+  background-image: url(https://images.pexels.com/photos/1261728/pexels-photo-1261728.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+  border: 1px solid #d6d9dc;
+  border-radius: 3px;
+
+  width: 80%;
+  padding: 50px;
+  margin: 0 0 40px 0;
+}
+
+
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-front img{
+  width: 100%;
+  height: 100%;
+}
+
+.flip-card-back {
+  background-image: url(https://images.pexels.com/photos/1261728/pexels-photo-1261728.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.form-row {
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.form-row h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.form-row input[type="text"], .form-row input[type="email"] {
+  background-color: #ffffff;
+  border: 1px solid #d6d9dc;
+  border-radius: 3px;
+  width: 200px;
+  padding: 7px;
+  font-size: 14px;
+}
+
+.form-row label {
+  margin-bottom: 15px;
+}
+
+.form-row input[type="text"]:invalid, .form-row input[type="email"]:invalid {
+  border: 1px solid #d55c5f;
+  color: #d55c5f;
+  box-shadow: none;
+}
+
+.form-row textarea {
+  font-family: "Helvetica", "Arial", sans-serif;
+  font-size: 14px;
+
+  border: 1px solid #d6d9dc;
+  border-radius: 3px;
+
+  min-height: 200px;
+  margin-bottom: 10px;
+  padding: 7px;
+  resize: none;
+}
+
+.form-row button {
+  align-self: center;
+  font-size: 16px;
+  font-weight: bold;
+
+  color: #ffffff;
+  background-color: #5995da;
+
+  border: none;
+  border-radius: 3px;
+
+  width: 200px;
+  padding: 10px 40px;
+  cursor: pointer;
+}
+
+.form-row button:hover {
+  background-color: #76aeed;
+}
+
+footer {
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+footer {
+  padding: 20px;
+  text-align: center; 
+  background: transparent;
+}
